@@ -1,0 +1,102 @@
+@import './variables';
+
+.next-appointment {
+  margin-right: 2.4rem;
+  position: relative;
+  background-color: $color-purple-primary;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color:#fff;
+  padding: 2.4rem;
+  width: 270px;
+  overflow: hidden;
+
+  &_info {
+    display: flex;
+    margin-bottom: 2.4rem;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &_date {
+      margin-bottom: 2.4rem;
+  }
+
+  &_numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  & .room_info {
+      display: flex;
+      flex-direction: column;
+  }
+
+  &_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & a {
+      position: relative;
+      z-index: 1000;
+      padding: 1rem 3.2rem;
+      background-color: #fff;
+      font-size: 1.4rem;
+      line-height: 2;
+      font-weight: 500;
+      border-radius: 25px;
+      text-decoration: none;
+      color: $color-text-primary;
+      transition: all .2s linear;
+
+      &:hover {
+
+      }
+    }
+  }
+
+  & h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 2.4rem;
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  & p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+  }
+
+  & img {
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+  &:after {
+    content:'';
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 64.89%);
+    opacity: 0.5;
+    top: 55%;
+    right: -35%;
+  }
+}

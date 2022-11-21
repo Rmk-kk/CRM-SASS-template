@@ -1,0 +1,61 @@
+@import "./variables";
+
+.container {
+  height: 93vh;
+  display: flex;
+
+  &_sidebar {
+    background: $color-background-primary;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    &-link {
+      width: 5rem;
+      height: 5rem;
+      background-color: #fff;
+      border-radius: 50%;
+      outline: 1px solid #EAEEF4;
+      outline-offset: -1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .1s linear;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+
+      & svg {
+        height: 20px;
+        width: 20px;
+        fill:$color-grey-icons;
+      }
+    }
+  }
+
+  &_content {
+      flex: 1;
+      padding: 2rem 2.4rem;
+      background: #676767;
+
+  }
+
+  &_widgets {
+    max-width: 450px;
+    flex: 0 0 30%;
+  }
+
+}
+
+.active-link {
+  background-color: $color-purple-primary;
+
+  & svg, path {
+    fill: white;
+  }
+}
+
+
+
